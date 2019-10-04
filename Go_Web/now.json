@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "Naturvetarbalen",
+    "builds": [
+        { "src": "*.go", "use": "@now/go" },
+		{ "src": "js/*.js", "use": "@now/static" },
+		{ "src": "html/*.html", "use": "@now/static" }
+    ]
+}

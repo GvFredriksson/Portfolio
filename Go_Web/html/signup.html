@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naturvetarbalen</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <link href="../css/normalize.css" rel="stylesheet">
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen">
+      </head>
+      
+      <body>
+        <header>
+          <div class="header">
+            <h1>Naturvetarbalen</h1>
+          </div>
+        </header>
+
+  <div class="container">
+    <article class="signupMain">
+      <div>
+        <h2>Sign up</h2>
+      </div>
+
+      <form method="POST" id="signupForm">
+        <div id="signupDiv">
+          <ul>
+            <li>
+              <label for="text">Name:</label>
+              <input type="text" name="name" id="signupName" placeholder="Your name" required="required" />
+            </li>
+            <li>
+              <label for="text">Password:</label>
+              <input type="password" name="password" id="signupPassword" placeholder="Your password" required="required" />
+            </li>
+            <li>
+              <label for="text">Comfirm Password:</label>
+              <input type="password" name="Confirm password" id="comfirmPassword" placeholder="Comfirm your password" required="required" />
+            </li>
+            <li>
+              <label for="text">Is this an admin user?:</label>
+              <input type="checkbox" name="Admin?" id="Admin?" placeholder="Admin? (y/n)" />
+            </li>
+          </ul>
+          <button type="submit" id="submitSignUp">Sign up</button>
+        </div>
+      </form>
+    </article>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>
+        &copy; Copyright by gvfredriksson
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

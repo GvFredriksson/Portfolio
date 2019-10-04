@@ -1,0 +1,330 @@
+* {
+	font-family: Roboto, sans-serif;
+	box-sizing: border-box; /*to prevent padding that make the box bigger than the size we define*/
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	color: #000000;
+  	background-color: Ivory;
+}
+
+/*Style input place holder font color*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d8d7db;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #d8d7db;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #d8d7db;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #d8d7db;
+}
+
+/*--------------------------------STYLE HEADER PART------------------------------*/
+
+.header, .container, .footer {
+	width: 60%;
+	margin: 0 auto;
+	text-decoration-line: none;
+}
+
+.header {
+	width: 30%;
+	padding: 1% 0 0 0;
+	text-align: center;
+}
+
+.header img {
+	width: 13%;
+}
+
+h1 {
+	color: #000;
+	font-family: 'Baloo', cursive;
+	font-size: 250%;
+}
+/*-------------------------------SHOW TIME--------------------------------------*/
+
+.showTime {
+	font-size: 200%
+}
+
+/*-------------------------------STYLE CONTENT PART-----------------------------*/
+.container {
+	flex: 1;
+	background-color: rgba(3, 93, 65, 0.65);
+	border: 1px solid #000;
+	padding-bottom: 50px;
+}
+
+article {
+	position: relative;
+	top: 30px; /*Can not use percentage*/
+}
+
+article h2, .courseChoice {
+	text-align: center;
+}
+
+.main {
+	display: grid;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.main h2{
+	background-color: ivory;
+	border: 2px solid rgb(44, 44, 44);
+	padding: 10px;
+}
+
+.main, .signupMain, .module, .lobby, .score {
+	width: 55%;
+	margin: 0 auto;
+}
+
+.buttonClass {             /* CHANGE TO COVER ALL BUTTONS */
+	padding-top: 10px;
+}
+
+form {
+	margin-top: 6.45%;
+	height: auto;
+	padding: 4.2% 2%;
+}
+
+form#signInForm, form#signupForm, form#logForm, form#downloadQRForm, form#generateTicketsForm, form#showTicketForm, form#createTicketForm {
+	text-align: right;
+	background-color: Ivory;
+}
+
+.quit, #explainGame, .quitTwochoice {
+	/*position: relative;*/
+	margin: 0 auto;
+	clear: both;
+}
+
+.quit form {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+input, button {
+	border: 1px solid #006666;
+}
+
+button {
+	font-size: 112%;
+    background-color: Ivory;
+	color: rgb(0, 0, 0);
+	width: 250px;
+	text-align: center;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: opacity .2s ease-out;
+	min-width: 250px;
+	max-width: 100%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover  {
+	background-color: rgb(212, 212, 204);
+}
+
+#signInForm button, #signUp button, #signupForm button, .quit button, #ans button, #downloadQRForm button, #generateTicketsForm button, #showTicketForm button, #createTicketForm button {
+	min-width: 80px; /*Can not change*/
+	padding: 10px; /*Can not change*/
+	margin-top: 10px; /*Can not change*/
+}
+
+/*-----------------------------END SING IN AND SIGN UP------------------------------*/
+
+
+/*-----------STYLE FOOTER PART------------*/
+footer {
+	position: relative;
+	bottom: 0;
+	height: 50px; /*Can not change*/
+	width: 100%;
+	background-color: Ivory;
+}
+
+footer p {
+	padding: 0.5% 0;
+	font-size: 65%;
+}
+
+.footer {
+	text-align: center;
+}
+
+.oops {
+	margin-top: 5%;
+	font-size: 600%;
+	line-height: 1.5em;
+}
+
+
+
+.showLogClass {
+	background-color: ivory;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+/*-----------------------------------------Show Time-----------------------------------------*/
+
+.dateDiv {
+	background-color: ivory;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+.showTime {
+	table-layout: auto;
+	font-size: 112%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.showTime td, .showTime th {
+	border: 1px solid black; 
+	padding: 8px;
+}
+
+.showTime tr:nth-child(odd){background-color: ivory;}
+.showTime tr:nth-child(even){background-color: whitesmoke;}
+
+.showTime th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgba(221, 63, 63, 0.425);
+	border: 2px solid black;
+}
+
+/*------------------------------------------MEDIA QUERY------------------------------------------*/
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+	header {
+		display: none;
+	}
+
+	footer {
+		display: none;
+	}
+
+	form#signInForm, form#signupForm {
+		margin-top: 3%;
+	}
+
+	.oops {
+		margin-top: 10%;
+		font-size: 500%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.oops {
+		font-size: 400%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.header, .container, .footer {
+		width: 100%;
+		border: none;
+	}
+
+	.header a {
+		float: left;
+		width: 20%;
+		text-align: center;
+	}
+
+	.header img {
+		width: 60%;
+		padding-bottom: 3%;
+
+	}
+
+	.container {
+		padding-bottom: 30px;
+	}
+
+	h1 {
+		color: #000;
+		width: 80%;
+		float: left;
+		font-size: 180%;
+		text-align: left;
+		padding-top: 3%;
+	}
+
+	.main, .signupMain {
+		width: 95%;
+	}
+
+	h2 {
+		font-size: 120%;
+	}
+
+	article {
+		top: 20px; /*Can not use percentage*/
+	}
+
+	.container {
+		clear: both;
+	}
+
+	#signIn, #signupDiv {
+		max-width: 85%;
+	}
+
+	#signIn li, #signupDiv li {
+		margin-bottom: 2%;
+	}
+
+	#signIn li input, #signupDiv li input {
+		margin-top: 2%;
+	}
+
+	#signInForm button, #signUp button, #signupForm button, .quit button, #downloadQRForm button, #generateTicketsForm button {
+		min-width: 70px; /*Use px. Can not change to be percentage*/
+		font-size: 95%;
+	}
+
+	footer {
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 120%;
+		padding-top: 3%;
+	}
+
+	#howTo {
+		right: 10px; /*Can not change*/
+	}
+}
